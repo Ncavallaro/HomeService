@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Comunicate con Home Service">
+    <title>Comunicate con Home Service</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200;300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!--header-->
+    <header>
+        <!--logo-->
+        <a href="index.html">
+            <img src="images/logotipo.png" width="150px" height="150px">
+        </a>
+        <!--menu-->
+        <nav>
+            <ul class="menu">
+                <li>
+                    <a href="index.html">Home</a> 
+                </li>
+                <li>
+                    <a href="servicios.html">Servicios</a>
+                </li>
+                <li>
+                    <a href="nosotros.html">Nosotros</a>
+                </li>
+                <li>
+                    <a href="contacto.html">Contacto</a>
+                </li>
+                <li>
+                    <a href="sumate.html">Sumate</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container-fluid">
+        <!--formulario contacto-->
+        <div class="row">
+            <form>
+                <div class="col-lg-2 col-xs-6">
+                    <div class="mb-3">
+                        <label for="nombre" class="form-label">Nombre: </label>
+                        <input type="text" class="form-control" placeholder="Ingresa tu nombre">
+                    </div>
+                    <div class="mb-3">
+                        <label for="Apellido" class="form-label">Apellido: </label>
+                        <input type="text" class="form-control" placeholder="Ingresa tu Apellido">
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label for="telefono" class="form-label">Teléfono: </label>
+                    <input type="number" class="form-control" placeholder="Ingresa tu Teléfono">
+                </div>
+                <div class="mb-3">
+                  <label for="email" class="form-label">Email</label>
+                  <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
+                </div>
+                <div class="mb-3">
+                    <span>Nos comunicamos por: </span>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" id="checkTelefono" checked>
+                    <label class="form-check-label" for="checkTelefono">
+                      Teléfono
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" id="checkEmail" >
+                    <label class="form-check-label" for="checkEmail">
+                      Email
+                    </label>
+                  </div>
+                  <select class="form-select" aria-label="Default select example">
+                    <option selected>Seleccione</option>
+                    <option value="1">Electricidad</option>
+                    <option value="2">Plomeria</option>
+                    <option value="3">Cerrajeria</option>
+                    <option value="4">Mudanzas</option>
+                    <option value="5">Servicios de limpieza</option>
+                    <option value="6">Fumigación</option>
+                    <option value="7">Jardineria</option>
+                    <option value="8">Piletero</option>
+                    <option value="9">Pintor</option>
+                    <option value="10">Techistas</option>
+                  </select>
+                <button type="submit" class="btn btn-primary">Enviar solicitud</button>
+                <button type="reset" class="btn btn-secondary">Eliminar todo</button>
+              </form>   
+        </div>
+
+        
+        <!-- <div class="row">
+            <h2>Formulario original</h2>
+            <form class="contactoPadre">
+                <div>
+                    <label for="nombre">Nombre: </label>	
+                    <input type="text" name="nombre" placeholder="Ingresa tu nombre"/>
+        
+                    <label for="apellido">Apellido: </label>	
+                    <input type="text" name="apellido" placeholder="Ingresa tu Apellido"/>
+                </div>
+                <div>
+                    <label for="telefono">Teléfono: </label>
+                    <input type="number" name="telefono" placeholder="Ingresa tu celular">
+        
+                    <label for="email">e-mail: </label>
+                    <input type="email" name="email" placeholder="Ingresa tu e-mail">
+                </div>
+                
+                <div>
+                    <span>Nos comunicamos por: </span>
+                    <input type="radio" name="email" value="mail" />
+                    <label for="email">e-mail </label>
+                    <input type="radio" name="telefono" value="telefono" />
+                    <label for="telefono">Telefono </label>
+                </div>
+                <div>
+                <label for="servicios">Servicio: </label>
+                    <select  name="servicios" style="width: 200px;">
+                        <option value="electricidad">Electricidad</option>
+                        <option value="plomeria">Plomeria</option>
+                        <option value="cerrajeria">Cerrajeria</option>
+                    </select>
+                </div>
+                <div>
+                <input type="submit" value="Enviar formulario"/>
+                <input type="reset" value="Limpiar formulario"/>
+        
+                <a href="https://api.whatsapp.com/send?phone=541124069904">
+                    <img src="images/iconosRedes/whatsapp.png" width="30px" height="30px" >
+                </a>
+                </div>
+            </form>
+        </div> -->
+
+        <!--footer-->
+        <div class="row">
+            <footer class="footer">
+                <div class="footer__logoFooter">
+                    <h3>Home service S.A.</h3>
+                </div>  
+                <div class="footer__redes">
+                    <h5>SEGUINOS EN NUESTRAS REDES</h5>
+                    <ul>
+                        <li><img src="images/iconosRedes/facebook.png"></li>
+                        <li><img src="images/iconosRedes/gorjeo.png"></li>
+                        <li><img src="images/iconosRedes/instagram.png"></li>
+                        <li>
+                            <a href="https://api.whatsapp.com/send?phone=541124069904">
+                            <img src="images/iconosRedes/whatsapp.png">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </footer>
+            
+        </div>
+    </div>
+
+
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>
